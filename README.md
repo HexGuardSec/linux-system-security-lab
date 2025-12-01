@@ -1,0 +1,70 @@
+# Linux System Security Lab
+
+This project is a complete hands-on Linux system security and administration lab.  
+It combines user management, SSH security, system enumeration, and service auditing into one structured learning environment.
+
+It demonstrates practical skills required for:
+- Junior SysAdmin roles
+- Internal IT Engineer positions
+- Linux support and security operations
+
+This repo merges three previous labs into a single, enterprise-oriented project.
+
+---
+
+## 📂 Repository Structure
+
+```
+
+linux-system-security-lab/
+│
+├── 01-user-and-permissions/
+├── 02-ssh-hardening-and-access/
+└── 03-system-enumeration/
+
+```
+
+---
+
+## 🧪 Lab Modules
+
+### **Module 1 – User & Permissions Management**
+- User creation  
+- Group hierarchy  
+- sudoers  
+- passwd/shadow  
+- permissions and ownership  
+- basic access troubleshooting  
+
+### **Module 2 – SSH Hardening & Access Control**
+- Key-based authentication  
+- sshd_config tuning  
+- disabling password login  
+- troubleshooting failed logins  
+- log analysis (auth.log, journalctl)  
+
+### **Module 3 – System Enumeration & Security Audit**
+- SUID/SGID binaries  
+- running processes  
+- open ports (ss -tulnp)  
+- services (systemctl)  
+- filesystem inspection  
+- kernel/system info  
+- security posture analysis  
+
+---
+
+## 🎯 Goal of the Lab
+To build a realistic, complete Linux security baseline similar to what is expected from Internal IT Engineers or Junior System Administrators.
+
+The lab is designed to:
+- Understand Linux deeply  
+- Practice troubleshooting  
+- Build a portfolio of technical scenarios  
+- Prepare for professional interviews  
+
+---
+
+## 📌 Author
+Part of my training to become an Internal IT Engineer in Japan.  
+The structure and documentation follow professional standards used in enterprise environments.
