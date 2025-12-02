@@ -16,12 +16,13 @@ This repo merges three previous labs into a single, enterprise-oriented project.
 
 ```
 
-04-log-analysis/
+linux-system-security/
 │
 ├── 01-user-and-permissions/
 ├── 02-ssh-hardening-and-access/
 ├── 03-system-enumeration/
-└── 04-log-analysis
+├── 04-log-analysis
+└── 05-intrusion-no-firewall/
 
 ```
 
@@ -59,6 +60,12 @@ This repo merges three previous labs into a single, enterprise-oriented project.
 - Track root sudo activity
 - Use `auth.log`, `journalctl`, and `last`
 - Monitor SSH with system logs
+
+### **Module 5 - SSH Intrusion + Firewall Misconfiguration**
+- UFW firewall disabled simulation
+- Nmap scan from attacker machine (Kali)
+- SSH brute-force with hydra or manual testing
+- Re-enable firewall and protect port 2222
 
 ---
 
