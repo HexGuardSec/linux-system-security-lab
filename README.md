@@ -23,7 +23,8 @@ linux-system-security/
 ├── 03-system-enumeration/
 ├── 04-log-analysis
 ├── 05-intrusion-no-firewall/
-└── 06-fail2ban-ssh-protection
+├── 06-fail2ban-ssh-protection
+└── 07-broken-sudoers
 
 ```
 
@@ -74,6 +75,12 @@ linux-system-security/
 - Analyze `/var/log/fail2ban.log` and `/var/log/auth.log`
 - Unban a legitimate IP via `fail2ban-client`
 - Learn fail2ban jail structure and reactive SSH defense
+
+### **Module 7 – Broken sudoers configuration**
+- Introduce a syntax error in `/etc/sudoers`
+- Simulate total `sudo` access failure
+- Test recovery methods via root or console
+- Restore `sudo` with `visudo` safely
 
 ---
 
