@@ -22,7 +22,8 @@ linux-system-security/
 ├── 02-ssh-hardening-and-access/
 ├── 03-system-enumeration/
 ├── 04-log-analysis
-└── 05-intrusion-no-firewall/
+├── 05-intrusion-no-firewall/
+└── 06-fail2ban-ssh-protection
 
 ```
 
@@ -66,6 +67,13 @@ linux-system-security/
 - Nmap scan from attacker machine (Kali)
 - SSH brute-force with hydra or manual testing
 - Re-enable firewall and protect port 2222
+
+### **Module 6 – SSH Brute-force Protection (fail2ban)**
+- Simulate a brute-force attack from Kali (manual or hydra)
+- Automatically block IP using fail2ban
+- Analyze `/var/log/fail2ban.log` and `/var/log/auth.log`
+- Unban a legitimate IP via `fail2ban-client`
+- Learn fail2ban jail structure and reactive SSH defense
 
 ---
 
