@@ -16,11 +16,12 @@ This repo merges three previous labs into a single, enterprise-oriented project.
 
 ```
 
-linux-system-security-lab/
+04-log-analysis/
 │
 ├── 01-user-and-permissions/
 ├── 02-ssh-hardening-and-access/
-└── 03-system-enumeration/
+├── 03-system-enumeration/
+└── 04-log-analysis
 
 ```
 
@@ -51,6 +52,13 @@ linux-system-security-lab/
 - filesystem inspection  
 - kernel/system info  
 - security posture analysis  
+
+### **Module 4 - SSH Log Analysis**
+- Identify invalid user access
+- Detect brute-force user access
+- Track root sudo activity
+- Use `auth.log`, `journalctl`, and `last`
+- Monitor SSH with system logs
 
 ---
 
