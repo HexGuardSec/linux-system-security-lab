@@ -1,0 +1,25 @@
+# SUID Audit - Ubuntu Server 24.04
+# Date: 2025-12-03
+
+Legend:
+[✓] = Legitimate / Low Risk
+[⚠️] = Medium Risk (monitor)
+[❌] = High Risk (manual review)
+
+-------------------------------------------------------------------
+| File Path                 | Owner | Purpose         | Risk Level |
+|--------------------------|-------|------------------|------------|
+| /usr/bin/passwd          | root  | Change password  | [✓] Legit  |
+| /usr/bin/sudo            | root  | sudo exec        | [✓] Legit  |
+| /bin/mount               | root  | Mount FS         | [⚠️] Monitor |
+| /opt/test-suid/rootshell | root  | SUID test shell  | [❌] Dangerous |
+-------------------------------------------------------------------
+
+Note:
+The file `/opt/test-suid/rootshell` is a manually created SUID shell and must be removed after testing:
+```bash
+sudo rm /opt/test-suid/rootshell
+
+Modern versions of Bash (≥ 4.2) include security mechanisms that disable SUID behavior for Bash binaries by default.
+
+This is a deliberate security patch, because allowing Bash to run as root when called by unprivileged users poses a significant risk.
