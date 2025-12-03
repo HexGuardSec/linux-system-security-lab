@@ -21,10 +21,11 @@ linux-system-security/
 ├── 01-user-and-permissions/
 ├── 02-ssh-hardening-and-access/
 ├── 03-system-enumeration/
-├── 04-log-analysis
+├── 04-log-analysis/
 ├── 05-intrusion-no-firewall/
-├── 06-fail2ban-ssh-protection
-└── 07-broken-sudoers
+├── 06-fail2ban-ssh-protection/
+├── 07-broken-sudoers/
+└── 08-unauthorized-privilege-attempt/
 
 ```
 
@@ -81,6 +82,13 @@ linux-system-security/
 - Simulate total `sudo` access failure
 - Test recovery methods via root or console
 - Restore `sudo` with `visudo` safely
+
+### **Module 8 – Unauthorized Privilege Modification Attempt**
+- Simulate unauthorized access attempts to files like `/etc/shadow`, `/etc/sudoers`, and `/root`
+- Log and trace unauthorized actions via auth.log and journalctl
+- Perform full SUID/SGID binary audit using find
+- Test a fake SUID shell and understand why it fails on modern systems
+- Understand the security design of modern Bash (v5+)
 
 ---
 
