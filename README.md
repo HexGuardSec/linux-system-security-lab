@@ -25,7 +25,8 @@ linux-system-security/
 ├── 05-intrusion-no-firewall/
 ├── 06-fail2ban-ssh-protection/
 ├── 07-broken-sudoers/
-└── 08-unauthorized-privilege-attempt/
+├── 08-unauthorized-privilege-attempt/
+└── 09-critical-file-tampering/
 
 ```
 
@@ -89,6 +90,13 @@ linux-system-security/
 - Perform full SUID/SGID binary audit using find
 - Test a fake SUID shell and understand why it fails on modern systems
 - Understand the security design of modern Bash (v5+)
+
+- ### **Module 9 – Critical File Tampering**
+- Simulate unauthorized modification of `/etc/passwd`  
+- Analyze login failures and logs  
+- Recover broken user accounts  
+- Remove malicious users
+- Understand how file corruption can break sudo or login behavior
 
 ---
 
