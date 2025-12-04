@@ -26,7 +26,9 @@ linux-system-security/
 ├── 06-fail2ban-ssh-protection/
 ├── 07-broken-sudoers/
 ├── 08-unauthorized-privilege-attempt/
-└── 09-critical-file-tampering/
+├── 09-critical-file-tampering/
+└── 10-unknown-port-service
+
 
 ```
 
@@ -91,12 +93,19 @@ linux-system-security/
 - Test a fake SUID shell and understand why it fails on modern systems
 - Understand the security design of modern Bash (v5+)
 
-- ### **Module 9 – Critical File Tampering**
-- Simulate unauthorized modification of `/etc/passwd`  
-- Analyze login failures and logs  
-- Recover broken user accounts  
-- Remove malicious users
-- Understand how file corruption can break sudo or login behavior
+### **Module 9 – Critical File Tampering Incident**
+- Simulate unauthorized modification of `/etc/passwd` and `/etc/shadow`  
+- Observe login failures and journal errors  
+- Restore corrupted files manually or from backup  
+- Trace attacker actions via logs  
+- Learn to respond to user-related tampering incidents  
+
+### **Module 10 – Unknown Port / Hidden Service Detection**
+- Detect unexpected open ports via `ss`, `netstat`, and `lsof`  
+- Trace port back to process using `ps`, `lsof`, and `systemctl`  
+- Simulate suspicious listener via `nc -lvnp`  
+- Inspect enabled services and isolate unapproved background services  
+- Analyze and disable unnecessary or risky services  
 
 ---
 
