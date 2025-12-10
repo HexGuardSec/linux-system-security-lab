@@ -1,8 +1,15 @@
 # Linux System Security Lab
 
-![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 ![Category](https://img.shields.io/badge/Category-Linux%20Security-blue)
-![Level](https://img.shields.io/badge/Level-Junior%20Engineer-yellow)
+![Level](https://img.shields.io/badge/Level-Junior%20Analyst-yellow)
+![OS](https://img.shields.io/badge/OS-Ubuntu%2024.04-orange)
+![Hardening](https://img.shields.io/badge/Hardening-Enabled-success)
+![Logs](https://img.shields.io/badge/Logs-Auditing%20%26%20Forensics-blueviolet)
+![SUID](https://img.shields.io/badge/SUID-Analysis-critical)
+![Firewall](https://img.shields.io/badge/Firewall-UFW%20%7C%20iptables-important)
+![SecurityAudit](https://img.shields.io/badge/Security-Audit-ff69b4)
+
 
 This project is a complete hands-on Linux system security and administration lab.  
 It combines user management, SSH security, system enumeration, and service auditing into one structured learning environment.
